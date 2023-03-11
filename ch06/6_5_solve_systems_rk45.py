@@ -41,11 +41,10 @@ def main() -> None:
     print(solution)
 
     ax.plot(y0[0], y0[1], "ko")
-    ax.plot(solution.y[0, :], solution.y[1, :], "k", linewidth=0.5)
+    ax.plot(solution.y[0, :], solution.y[1, :], "ro-")
 
     plt.show()
-
-    fig.savefig("solve_system_rk45.pdf")
+    fig.savefig("6_5_solve_system_rk45.pdf")
 
 
 if __name__ == "__main__":
