@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.rcParams['text.usetex'] = True
 
 # Determine sample of interval of definition I = (-inf, inf)
-x = np.linspace(-1., 4.)
+x = np.linspace(0, 4.)
 
 # Define function for analytical solution
 def y(x):
