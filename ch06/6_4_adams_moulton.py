@@ -25,11 +25,11 @@ def main():
     
     for i in range(2):
         predicted = predictor(x_vals[i:i+5], output_vals[i:i+5], h)
-        print(f"y_{i+3},p = {predicted}")
+        print(f"y_{i+4},p = {predicted}")
         output_vals.append(predicted)
         corrected = corrector(x_vals[i+1:i+6], output_vals[i+1:i+6], h)
         output_vals[i+4] = corrected
-        print(f"y_{i+3},c = {corrected}")
+        print(f"y_{i+4},c = {corrected}")
 
 
 if __name__ == "__main__":
